@@ -1,4 +1,4 @@
-var app = angular.module('ic05App', ['ui.router']);
+var app = angular.module('ic05App', ['ui.router', 'ngVis']);
 
 app.config(function ($stateProvider, $urlRouterProvider) {
 	$urlRouterProvider.otherwise("/presentation");
