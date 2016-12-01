@@ -68,3 +68,28 @@
   margin-top: 5px;
   border-radius: 0px 0px 10px 10px;
 }
+
+.searchBox {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.searchTitle {
+  margin: 0px 15px 10px 15px;
+}
+
+.specialisation {
+  margin-bottom: 15px;
+}
+
+.searchBar {
+  margin: 0px 15px 10px 15px;
+  width: 97%;
+  
+}
+
+.searchButton {
+  margin-left: 15px;
+  width: 97%;
+}

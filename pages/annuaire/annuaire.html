@@ -4,13 +4,14 @@
     </div>
 </div>
 <hr>
-<div class="row bg-primary">
-    <h4>Vous recherchez : </h6>
-        <input type="text" class="form-control" placeholder="Search for...">
+<div class="row bg-primary searchBox">
+    <h4 class="searchTitle">Vous recherchez : </h6>
+        <input type="text" class="form-control searchBar" ng-model="inputText"
+                placeholder="Rechercher des membres par prénom, nom, entreprise, localisation ...">
 
-        <div class="col-sm-6">
+        <div class="col-sm-6 specialisation">
             <label class="control-label" for="filiere">Filière :</label>
-            <select class="form-control" id="filiere">
+            <select class="form-control" id="filiere" ng-model="filiere">
                 <option>Toutes filières</option>
                 <option>ADEL</option>
                 <option>FDD</option>
@@ -23,9 +24,9 @@
             </select>
         </div>
 
-        <div class="col-sm-6">
+        <div class="col-sm-6 specialisation">
             <label class="control-label" for="promo">Promo :</label>
-            <select class="form-control" id="promo">
+            <select class="form-control" id="promo" ng-model="promo">
                 <option>Toutes promos</option>
                 <option>2016</option>
                 <option>2015</option>
@@ -33,8 +34,8 @@
                 <option>2013</option>
             </select>
         </div>
-        <button type="button" class="btn btn-primary btn-block" ng-click="openProfile(etudiant.url)" style="margin-bottom:10px;">
-            Contacter sur linkedIn 
+        <button type="button" class="btn btn-default btn-block searchButton" ng-click="searchAction()" style="margin-bottom:10px;">
+            Lancer la recherche 
         </button>
 </div>
 <div class="row">
