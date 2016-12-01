@@ -5,33 +5,35 @@
 </div>
 
 <div class="row">
-    <div class="container col-lg-12" style="background-color:blue">
-        <div class="row container" style="background-color:red" >
+    <div class="container col-lg-12 cellule" ng-repeat="etudiant in data">
+        <div class="row container" >
             <div class="col-sm-6">
-                <div class="row">
-                    Nom prénom
+                <div class="row etudiant">
+                    {{etudiant.nom}} {{etudiant.prenom}}
                 </div>
                 <div class="row">
-                    promo
+                    Promo : {{etudiant.promo}}
                 </div>
                 <div class="row">
-                    filiere
+                    Filiere : {{etudiant.filiere}}
                 </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6" style="padding-top: 5px;">
                 <div class="row">
-                    Nom prénom
+                    Tn10 chez :
                 </div>
                 <div class="row">
-                    promo
+                    {{etudiant.entreprise}}
                 </div>
                 <div class="row">
-                    filiere
+                    à {{etudiant.localisation}}
                 </div>
             </div>
         </div>
-        <div class="row" style="background-color:green"> 
-            Contacter sur LinkedIn
-            </div>
+        <div class="row linkedIn" > 
+            <a ng-href="{{etudiant.url}}">
+                Contacter sur LinkedIn
+            </a>
+        </div>
     </div>
 </div>

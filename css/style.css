@@ -46,3 +46,25 @@
   filter: alpha(opacity=50);
   opacity: 0.5;
 }
+
+
+/* ======= */
+/* Cellule Design */
+.cellule {
+  background-color: lightgray;
+  margin-bottom: 20px;
+  padding: 10px 15px 0px 15px;
+  border-radius: 10px;
+}
+
+.etudiant {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.linkedIn {
+  background-color: lightseagreen;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 0px 0px 10px 10px;
+}
