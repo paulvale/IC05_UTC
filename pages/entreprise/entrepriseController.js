@@ -1,4 +1,4 @@
-app.controller('EntrepriseController', function ($scope, $state, $http, $window) {
+app.controller('EntrepriseController', function ($scope, $state, $http, $window, EtudiantsFactory) {
     // Some functions
     function containSecteur(secteur, items) {
         return items.includes(secteur)
@@ -16,7 +16,7 @@ app.controller('EntrepriseController', function ($scope, $state, $http, $window)
         .then(function (res) {
             $scope.data = res.data;
             $scope.recherche = $scope.data;
-            $scope.secteurs = $scope.data.reduce(groupBySecteur,["-- Tous les secteurs --"])
+            $scope.secteurs = $scope.data.reduce(groupBySecteur, ["-- Tous les secteurs --"])
         });
 
 
@@ -26,80 +26,54 @@ app.controller('EntrepriseController', function ($scope, $state, $http, $window)
             && $scope.secteur == undefined && $scope.taille == undefined) {
             $scope.recherche = $scope.data;
         } else {
-            if ($scope.promo != undefined) {
-                if($scope.promo != "Toutes promos"){
-                    $scope.recherche = $scope.data.filter(entreprise => {
-                        return entreprise.promo == $scope.promo;
-                    })
-                }
+            if ($scope.promo != undefined && $scope.promo != "Toutes promos") {
+                $scope.recherche = $scope.data.filter(entreprise => {
+                    return entreprise.promo == $scope.promo;
+                })
+            }
 
-                if ($scope.filiere != undefined && $scope.filiere != "Toutes filières") {
-                    var tmpArray = $scope.recherche;
-                    $scope.recherche = tmpArray.filter(entreprise => {
-                        return entreprise.filiere.includes($scope.filiere)
-                    })
-                }
+            if ($scope.filiere != undefined && $scope.filiere != "Toutes filières") {
+                var tmpArray = $scope.recherche;
+                $scope.recherche = tmpArray.filter(entreprise => {
+                    return entreprise.filiere.includes($scope.filiere)
+                })
+            }
 
-                if ($scope.secteur != undefined && $scope.secteur !="-- Tous les secteurs --") {
-                    var tmpArray = $scope.recherche;
-                    $scope.recherche = tmpArray.filter(entreprise => {
-                        return entreprise.secteur == $scope.secteur
-                    })
-                }
+            if ($scope.secteur != undefined && $scope.secteur != "-- Tous les secteurs --") {
+                var tmpArray = $scope.recherche;
+                $scope.recherche = tmpArray.filter(entreprise => {
+                    return entreprise.secteur == $scope.secteur
+                })
+            }
 
-                if ($scope.taille != undefined && $scope.taille != "Toutes tailles") {
-                    var tmpArray = $scope.recherche;
-                    $scope.recherche = tmpArray.filter(entreprise => {
-                        return entreprise.nombre == $scope.taille
-                    })
-                }
+            if ($scope.taille != undefined && $scope.taille != "Toutes tailles") {
+                var tmpArray = $scope.recherche;
+                $scope.recherche = tmpArray.filter(entreprise => {
+                    return entreprise.nombre == $scope.taille
+                })
+            }
 
-                if ($scope.inputText != undefined && $scope.inputText.length > 0) {
-                    var tmpArray = $scope.recherche;
-                    $scope.recherche = tmpArray.filter(entrepriseObject => {
-                        var entreprise = entrepriseObject.entreprise.toLowerCase()
-                        var localisation = entrepriseObject.localisation.toLowerCase()
+            if ($scope.inputText != undefined && $scope.inputText.length > 0) {
+                var tmpArray = $scope.recherche;
+                $scope.recherche = tmpArray.filter(entrepriseObject => {
+                    var entreprise = entrepriseObject.entreprise.toLowerCase()
+                    var localisation = entrepriseObject.localisation.toLowerCase()
 
-                        var recherche = $scope.inputText.toLowerCase()
+                    var recherche = $scope.inputText.toLowerCase()
 
-                        return ( recherche.includes(entreprise)
-                            || recherche.includes(localisation)
-                            || entreprise.includes(recherche)
-                            || localisation.includes(recherche)
-                        )
-                    })
+                    return (recherche.includes(entreprise)
+                        || recherche.includes(localisation)
+                        || entreprise.includes(recherche)
+                        || localisation.includes(recherche)
+                    )
+                })
 
-                }
-            } else {
-                if ($scope.filiere != undefined) {
-                    var tmpArray = $scope.recherche;
-                    $scope.recherche = tmpArray.filter(entreprise => {
-                        return entreprise.filiere == $scope.filiere
-                    })
-                }
-                if ($scope.inputText != undefined) {
-                    var tmpArray = $scope.recherche;
-                    $scope.recherche = tmpArray.filter(entreprise => {
-                        var nom = entreprise.nom.toLowerCase()
-                        var prenom = entreprise.prenom.toLowerCase()
-                        var entreprise = entreprise.entreprise.toLowerCase()
-                        var localisation = entreprise.localisation.toLowerCase()
-
-                        var recherche = $scope.inputText.toLowerCase()
-
-                        return (recherche.includes(nom)
-                            || recherche.includes(prenom)
-                            || recherche.includes(entreprise)
-                            || recherche.includes(localisation)
-                            || nom.includes(recherche)
-                            || prenom.includes(recherche)
-                            || entreprise.includes(recherche)
-                            || localisation.includes(recherche)
-                        )
-                    })
-
-                }
             }
         }
+    }
+
+    $scope.openProfile = function (entreprise) {
+        EtudiantsFactory.set(entreprise);
+        $state.go('annuaire');
     }
 });

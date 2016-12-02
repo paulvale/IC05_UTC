@@ -67,33 +67,33 @@
     </div>
 </div>
 <div class="row">
-    <div class="container col-lg-12 cellule" ng-repeat="entreprise in recherche | orderBy : 'nom'">
+    <div class="container col-lg-12 cellule" ng-repeat="entre in recherche | orderBy : 'entreprise'">
         <div class="row container">
             <div class="col-sm-6">
                 <div class="row etudiant">
-                    {{entreprise.entreprise}}
+                    {{entre.entreprise}}
                 </div>
                 <div class="row">
-                    Secteur : {{entreprise.secteur}}
+                    Secteur : {{entre.secteur}}
                 </div>
                 <div class="row">
-                    Nombre d'employés : {{entreprise.nombre}}
+                    Nombre d'employés : {{entre.nombre}}
                 </div>
             </div>
             <div class="col-sm-6" style="padding-top: 5px;">
                 <div class="row">
-                    Déja pris {{entreprise.effectif}} TN1O
+                    Déja pris {{entre.effectif}} TN1O
                 </div>
                 <div class="row">
-                    en : {{entreprise.filiere}}
+                    en : {{entre.filiere}}
                 </div>
                 <div class="row">
-                    à {{entreprise.localisation}}
+                    à {{entre.localisation}}
                 </div>
             </div>
         </div>
         <hr>
-        <button type="button" class="btn btn-primary btn-block" ng-click="openProfile(entreprise)" style="margin-bottom:10px;">
+        <button type="button" class="btn btn-primary btn-block" ng-click="openProfile(entre)" style="margin-bottom:10px;">
             Rechercher les anciens stagiaires 
         </button>
     </div>

@@ -1,9 +1,16 @@
-app.controller('AnnuaireController', function ($scope, $state, $http, $window) {
+app.controller('AnnuaireController', function ($scope, $state, $http, $window, EtudiantsFactory) {
+    $scope.info = EtudiantsFactory.get()
     $http.get('annuaire.json')
         .then(function (res) {
             $scope.data = res.data;
             $scope.recherche = $scope.data;
+
+            if($scope.info != undefined) {
+                $scope.inputText = $scope.info.entreprise;
+                $scope.searchAction();
+            }
         });
+    
 
     $scope.openProfile = function(urlEtudiant){
         $window.open(urlEtudiant, '_blank');

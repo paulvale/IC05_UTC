@@ -41,3 +41,21 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 			controller: 'VisualisationController'
 		})
 });
+
+app.factory('EtudiantsFactory', function(){
+	 var savedData = {}
+
+ 	function set(data) {
+   		savedData = data;
+ 	}
+ 	function get() {
+		 var tmp = savedData;
+		 savedData = undefined
+  		return tmp;
+ 	}
+
+ 	return {
+  		set: set,
+  		get: get
+ 	}
+})
