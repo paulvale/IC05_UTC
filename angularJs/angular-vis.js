@@ -8,78 +8,9 @@ angular.module('ngVis', [])
         };
     })
 
-/**
- * TimeLine directive
- */
-    .directive('visTimeline', function () {
-        'use strict';
-        return {
-            restrict: 'EA',
-            transclude: false,
-            scope: {
-                data: '=',
-                options: '=',
-                events: '='
-            },
-            link: function (scope, element, attr) {
-                var timelineEvents = [
-                    'rangechange',
-                    'rangechanged',
-                    'timechange',
-                    'timechanged',
-                    'select',
-                    'doubleClick',
-                    'click',
-                    'contextmenu'
-                ];
-
-                // Declare the timeline
-                var timeline = null;
-
-                scope.$watch('data', function () {
-                    // Sanity check
-                    console.log(scope.data);
-                    if (scope.data == null) {
-                        return;
-                    }
-
-                    // If we've actually changed the data set, then recreate the graph
-                    // We can always update the data by adding more data to the existing data set
-                    if (timeline != null) {
-                        timeline.destroy();
-                    }
-
-                    // Create the timeline object
-                    console.log(scope.data);
-                    timeline = new vis.Timeline(element[0], scope.data.items, scope.data.groups, scope.options);
-
-                    // Attach an event handler if defined
-                    angular.forEach(scope.events, function (callback, event) {
-                        if (timelineEvents.indexOf(String(event)) >= 0) {
-                            timeline.on(event, callback);
-                        }
-                    });
-
-                    // onLoad callback
-                    if (scope.events != null && scope.events.onload != null &&
-                        angular.isFunction(scope.events.onload)) {
-                        scope.events.onload(timeline);
-                    }
-                });
-
-                scope.$watchCollection('options', function (options) {
-                    if (timeline == null) {
-                        return;
-                    }
-                    timeline.setOptions(options);
-                });
-            }
-        };
-    })
-
-/**
- * Directive for network chart.
- */
+    /**
+     * Directive for network chart.
+     */
     .directive('visNetwork', function () {
         return {
             restrict: 'EA',
@@ -133,9 +64,27 @@ angular.module('ngVis', [])
                     if (network != null) {
                         network.destroy();
                     }
+                    var parserOptions = {
+                        edges: {
+                            inheritColors: true
+                        },
+                        nodes: {
+                            fixed: false,
+                            parseColor: true
+                        }
+                    }
+                    // parse the gephi file to receive an object
+                    // containing nodes and edges in vis format.
+                    var parsed = vis.network.convertGephi(scope.data, parserOptions);
+
+                    // provide data in the normal fashion
+                    var data = {
+                        nodes: parsed.nodes,
+                        edges: parsed.edges
+                    };
 
                     // Create the graph2d object
-                    network = new vis.Network(element[0], scope.data, scope.options);
+                    network = new vis.Network(element[0], data, scope.options);
 
                     // Attach an event handler if defined
                     angular.forEach(scope.events, function (callback, event) {
@@ -159,69 +108,4 @@ angular.module('ngVis', [])
                 });
             }
         };
-    })
-
-/**
- * Directive for graph2d.
- */
-    .directive('visGraph2d', function () {
-        'use strict';
-        return {
-            restrict: 'EA',
-            transclude: false,
-            scope: {
-                data: '=',
-                options: '=',
-                events: '='
-            },
-            link: function (scope, element, attr) {
-                var graphEvents = [
-                    'rangechange',
-                    'rangechanged',
-                    'timechange',
-                    'timechanged',
-                    'finishedRedraw'
-                ];
-
-                // Create the chart
-                var graph = null;
-
-                scope.$watch('data', function () {
-                    // Sanity check
-                    if (scope.data == null) {
-                        return;
-                    }
-
-                    // If we've actually changed the data set, then recreate the graph
-                    // We can always update the data by adding more data to the existing data set
-                    if (graph != null) {
-                        graph.destroy();
-                    }
-
-                    // Create the graph2d object
-                    graph = new vis.Graph2d(element[0], scope.data.items, scope.data.groups, scope.options);
-
-                    // Attach an event handler if defined
-                    angular.forEach(scope.events, function (callback, event) {
-                        if (graphEvents.indexOf(String(event)) >= 0) {
-                            graph.on(event, callback);
-                        }
-                    });
-
-                    // onLoad callback
-                    if (scope.events != null && scope.events.onload != null &&
-                        angular.isFunction(scope.events.onload)) {
-                        scope.events.onload(graph);
-                    }
-                });
-
-                scope.$watchCollection('options', function (options) {
-                    if (graph == null) {
-                        return;
-                    }
-                    graph.setOptions(options);
-                });
-            }
-        };
-    })
-;
+    });

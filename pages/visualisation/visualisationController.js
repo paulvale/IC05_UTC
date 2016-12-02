@@ -1,38 +1,75 @@
 app.controller('VisualisationController', function ($scope, $state, VisDataSet, $http) {
-    // load the JSON file containing the Gephi network.
-    $http.get('graphTest.json')
-       .then(function(res){
-          $scope.data = res.data;     
-          console.log(res.data)           
-        });
-    
-    $scope.onSelect = function(items) {
-      // debugger;
-      alert('select');
-    };
+  // load the JSON file containing the Gephi network.
+  $http.get('graphTest.json')
+    .then(function (res) {
+      $scope.data = res.data;
+    });
 
-    $scope.onClick = function(props) {
-      //debugger;
-      alert('Click');
-    };
+  $scope.onSelect = function (items) {
+    // debugger;
+    alert('select');
+  };
 
-    $scope.onDoubleClick = function(props) {
-      // debugger;
-      alert('DoubleClick');
-    };
+  $scope.onClick = function (props) {
+    //debugger;
+    alert('Click');
+  };
 
-    $scope.rightClick = function(props) {
-      alert('Right click!');
-      props.event.preventDefault();
-    };
-    
-    $scope.options = {
+  $scope.onDoubleClick = function (props) {
+    // debugger;
+    alert('DoubleClick');
+  };
+
+  $scope.rightClick = function (props) {
+    alert('Right click!');
+    props.event.preventDefault();
+  };
+
+  $scope.events = {};
+  $scope.visAvailable = false;
+  $scope.visProgress = 0;
+
+  $scope.options = {
       autoResize: true,
-      height: '800',
-      width: '100%'
+      height: '700',
+      width: '100%',
+      interaction: {
+          navigationButtons: true,
+          keyboard: true
+      },
+      physics: {
+          forceAtlas2Based: {
+              gravitationalConstant: -260,
+              centralGravity: 0.005,
+              springLength: 230,
+              springConstant: 0.18
+          },
+          maxVelocity: 146,
+          solver: 'forceAtlas2Based',
+          timestep: 0.35,
+          stabilization: {
+              enabled: true,
+              iterations: 200,
+              updateInterval: 50
+          }
+      },
+      layout: {
+          randomSeed: 34
+      }
     };
 
-    console.log("load reussi")
-    //$scope.data = gephiJSON;
+    $scope.events.stabilizationProgress = function() {
+        $scope.visAvailable = false;
+        var data = arguments[0]
+        $scope.$apply(data => {
+            $scope.visProgress = Math.round((arguments[0].iterations / arguments[0].total) * 100);
+        });
+    };
 
+    $scope.events.stabilizationIterationsDone = function() {
+        $scope.$apply(function(){
+          $scope.visAvailable = true;
+          $scope.visProgress = 100;
+        })
+    };
 });
