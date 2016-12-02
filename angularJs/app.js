@@ -28,6 +28,13 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 			controller: 'AnnuaireController'
 		})
 
+		.state('entreprise', {
+			url: '/entreprise',
+			templateUrl: 'pages/entreprise/entreprise.html',
+			controller: 'EntrepriseController'
+
+		})
+
 		.state('visualisation', {
 			url: '/visualisation',
 			templateUrl: 'pages/visualisation/visualisation.html',

@@ -1,0 +1,1055 @@
+[
+  {
+    "entreprise": "Accenture",
+    "localisation": "France, Paris",
+    "nombre": "plus de 10 000",
+    "secteur": "Technologies et services de l’information",
+    "filiere": "FDD, Libre",
+    "promo": 2015,
+    "effectif": 2
+  },
+  {
+    "entreprise": "Actimage",
+    "localisation": "France, Paris",
+    "nombre": "51-200",
+    "secteur": "Technologies et services de l’information",
+    "filiere": "SRI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Adomik",
+    "localisation": "France, Paris",
+    "nombre": "11-50",
+    "secteur": "Marketing et publicité",
+    "filiere": "ICSI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Air France",
+    "localisation": "France, Paris",
+    "nombre": "plus de 10 000",
+    "secteur": "Compagnie aérienne/Aviation",
+    "filiere": "FDD",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Akaon",
+    "localisation": "Corée du sud",
+    "nombre": "501-1000",
+    "secteur": "Technologies et services de l’information",
+    "filiere": "ICSI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Alstom Grid",
+    "localisation": "France, Paris",
+    "nombre": "plus de 10 000",
+    "secteur": "Industrie composants électriques/électroniques",
+    "filiere": "FDD",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Amadeus IT Group",
+    "localisation": "France, Paris",
+    "nombre": "plus de 10 000",
+    "secteur": "Technologies et services de l’information",
+    "filiere": "ICSI, ADEL",
+    "promo": 2015,
+    "effectif": 2
+  },
+  {
+    "entreprise": "Amadeus IT Group",
+    "localisation": "France, Sophia-Antipolis",
+    "nombre": "plus de 10 000",
+    "secteur": "Technologies et services de l'information",
+    "filiere": "FDD, ICSI, SRI",
+    "promo": 2015,
+    "effectif": 5
+  },
+  {
+    "entreprise": "Amazon",
+    "localisation": "Luxembourg",
+    "nombre": "plus de 10 000",
+    "secteur": "Internet",
+    "filiere": "ICSI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Apple",
+    "localisation": "USA, Cupertino",
+    "nombre": "plus de 10 000",
+    "secteur": "Produits électroniques grand public",
+    "filiere": "FDD, ICSI",
+    "promo": 2015,
+    "effectif": 2
+  },
+  {
+    "entreprise": "Arismore",
+    "localisation": "France, Paris",
+    "nombre": "201-500",
+    "secteur": "Technologies et services de l’information",
+    "filiere": "ISII",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Astek (for iWE)",
+    "localisation": "France, Nice",
+    "nombre": "1001-5000",
+    "secteur": "Technologies et services de l’information",
+    "filiere": "SRI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "AUSY",
+    "localisation": "France, Sophia Antopolis",
+    "nombre": "1001-5000",
+    "secteur": "Technologies et services de l’information",
+    "filiere": "ADEL",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "AVISTO",
+    "localisation": "France, Antibes",
+    "nombre": "51-200",
+    "secteur": "Logiciels informatiques",
+    "filiere": "FDD",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "AXA Global Direct",
+    "localisation": "France, Paris",
+    "nombre": "5001-10 000",
+    "secteur": "Assurances",
+    "filiere": "ICSI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Backelite",
+    "localisation": "France, Paris",
+    "nombre": "51-200",
+    "secteur": "Technologies et services de l’information",
+    "filiere": "ICSI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Bloomberg LP",
+    "localisation": "Angleterre, Londres",
+    "nombre": "plus de 10 000",
+    "secteur": "Services financiers",
+    "filiere": "SRI",
+    "promo": 2015,
+    "effectif": 2
+  },
+  {
+    "entreprise": "BNP Paribas",
+    "localisation": "France, Paris",
+    "nombre": "plus de 10 000",
+    "secteur": "Banques",
+    "filiere": "IL",
+    "promo": 2015,
+    "effectif": 2
+  },
+  {
+    "entreprise": "Bull",
+    "localisation": "France, Paris",
+    "nombre": "5001-10 000",
+    "secteur": "Technologies et services de l’information",
+    "filiere": "SRI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Bull",
+    "localisation": "France, Auvergne-Rhône-Alpes",
+    "nombre": "5001-10 000",
+    "secteur": "Technologies et services de l’information",
+    "filiere": "SRI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Calian",
+    "localisation": "Canada",
+    "nombre": "1001-5000",
+    "secteur": "Élaboration de programmes",
+    "filiere": "STRIE",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Canal+",
+    "localisation": "France, Paris",
+    "nombre": "5001-10 000",
+    "secteur": "Médias radio et télédiffusés",
+    "filiere": "SRI, ICSI",
+    "promo": 2015,
+    "effectif": 2
+  },
+  {
+    "entreprise": "Capgemini",
+    "localisation": "France, Grenoble",
+    "nombre": "plus de 10 000",
+    "secteur": "Technologies et services de l'information",
+    "filiere": "ICSI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Capgemini",
+    "localisation": "France, Havre",
+    "nombre": "plus de 10 000",
+    "secteur": "Technologies et services de l'information",
+    "filiere": "MPI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Capgemini",
+    "localisation": "France, Paris",
+    "nombre": "plus de 10 000",
+    "secteur": "Technologies et services de l'information",
+    "filiere": "IL, ICSI, ADEL, MPI",
+    "promo": 2015,
+    "effectif": 4
+  },
+  {
+    "entreprise": "Car&Boat Media",
+    "localisation": "France, Paris",
+    "nombre": "201-500",
+    "secteur": "Internet",
+    "filiere": "FDD",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Cardiweb",
+    "localisation": "France, Paris",
+    "nombre": "11-50",
+    "secteur": "echnologies et services de l’information",
+    "filiere": "ICSI",
+    "promo": 2015,
+    "effectif": 2
+  },
+  {
+    "entreprise": "Cassidian CyberSecurity",
+    "localisation": "France, Paris",
+    "nombre": "11-50",
+    "secteur": "Sécurité informatique et des réseaux",
+    "filiere": "SRI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "CEA",
+    "localisation": "France, Paris",
+    "nombre": "plus de 10 000",
+    "secteur": "Études/recherche",
+    "filiere": "ICSI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Centre National d'Études Spatiales",
+    "localisation": "France, Paris",
+    "nombre": "1001-5000",
+    "secteur": "Défense et espace",
+    "filiere": "STRIE",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Christian Dior Couture",
+    "localisation": "France, Paris",
+    "nombre": "1001-5000",
+    "secteur": "Articles de luxe et bijouterie",
+    "filiere": "ADEL",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Cisco",
+    "localisation": "France, Paris",
+    "nombre": "plus de 10 000",
+    "secteur": "Réseaux informatiques",
+    "filiere": "SRI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "CMR Group",
+    "localisation": "France, Marseille",
+    "nombre": "501-1000",
+    "secteur": "Automatismes industriels",
+    "filiere": "STRIE",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Codra",
+    "localisation": "France, Paris",
+    "nombre": "51-200",
+    "secteur": "Logiciels informatiques",
+    "filiere": "FDD",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Crédit Agricole Cards & Payments",
+    "localisation": "France, Paris",
+    "nombre": "11-50",
+    "secteur": "Conseil en management",
+    "filiere": "IL",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "D2SI",
+    "localisation": "France, Paris",
+    "nombre": "51-200",
+    "secteur": "Technologies et services de l’information",
+    "filiere": "ICSI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Dashlane",
+    "localisation": "France, Paris",
+    "nombre": "51-200",
+    "secteur": "Internet",
+    "filiere": "ICSI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Dassault Systemes",
+    "localisation": "France, Paris",
+    "nombre": "plus de 10 000",
+    "secteur": "Logiciels informatiques",
+    "filiere": "ICSI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Datadog",
+    "localisation": "USA, New-york",
+    "nombre": "201-500",
+    "secteur": "Logiciels informatiques",
+    "filiere": "SRI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Dataiku",
+    "localisation": "France, Paris",
+    "nombre": "51-200",
+    "secteur": "Logiciels informatiques",
+    "filiere": "FDD",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Deezer",
+    "localisation": "France, Paris",
+    "nombre": "201-500",
+    "secteur": "Divertissements",
+    "filiere": "FDD",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "DeltaCAD",
+    "localisation": "France, Lacroix Saint Ouen",
+    "nombre": "11-50",
+    "secteur": "Logiciels informatiques",
+    "filiere": "FDD",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "EANTC AG",
+    "localisation": "Allemagne, Berlin",
+    "nombre": "11-50",
+    "secteur": "Télécommunications",
+    "filiere": "SRI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "ECOCEA",
+    "localisation": "France, Paris",
+    "nombre": "11-50",
+    "secteur": "Technologies et services de l’information",
+    "filiere": "ICSI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "EDF",
+    "localisation": "France, Paris",
+    "nombre": "plus de 10 000",
+    "secteur": "Pétrole et énergie",
+    "filiere": "SRI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "EON Reality",
+    "localisation": "Angleterre, Manchester",
+    "nombre": "201-500",
+    "secteur": "Logiciels informatiques",
+    "filiere": "ICSI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Eugen Systems",
+    "localisation": "France, Paris",
+    "nombre": "11-50",
+    "secteur": "Jeux électroniques",
+    "filiere": "ICSI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Evosys",
+    "localisation": "France, Paris",
+    "nombre": "501-1000",
+    "secteur": "Technologies et services de l’information",
+    "filiere": "IL",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "FastConnect",
+    "localisation": "France, Paris",
+    "nombre": "51-200",
+    "secteur": "Technologies et services de l’information",
+    "filiere": "FDD",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Fontaine Consultants",
+    "localisation": "France, Paris",
+    "nombre": "11-50",
+    "secteur": "Conseil en management",
+    "filiere": "ADEL",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "GDF SUEZ Energy International",
+    "localisation": "Angleterre, Londres",
+    "nombre": "plus de 10 000",
+    "secteur": "Pétrole et énergie",
+    "filiere": "ADEL",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "GE",
+    "localisation": "France, Paris",
+    "nombre": "plus de 10 000",
+    "secteur": "Hôpitaux et centres de soins",
+    "filiere": "STRIE, IL",
+    "promo": 2015,
+    "effectif": 2
+  },
+  {
+    "entreprise": "Genymobile",
+    "localisation": "France, Paris",
+    "nombre": "51-200",
+    "secteur": "Logiciels informatiques",
+    "filiere": "ICSI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Groupe ConcoursMania",
+    "localisation": "France, Bordeaux",
+    "nombre": "51-200",
+    "secteur": "Marketing et publicité",
+    "filiere": "ADEL",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Guavus",
+    "localisation": "Canada, Montréal",
+    "nombre": "201-500",
+    "secteur": "Logiciels informatiques",
+    "filiere": "FDD",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "GumGum",
+    "localisation": "USA, Los Angeles",
+    "nombre": "201-500",
+    "secteur": "Marketing et publicité",
+    "filiere": "SRI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "GumGum",
+    "localisation": "USA, Santa Monica",
+    "nombre": "201-500",
+    "secteur": "Marketing et publicité",
+    "filiere": "ICSI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Hewlett-Packard",
+    "localisation": "France, Lille",
+    "nombre": "plus de 10 000",
+    "secteur": "Technologies et services de l’information",
+    "filiere": "SRI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Hewlett-Packard",
+    "localisation": "France, Paris",
+    "nombre": "plus de 10 000",
+    "secteur": "Technologies et services de l’information",
+    "filiere": "SRI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Ippon Technologies",
+    "localisation": "France, Paris",
+    "nombre": "201-500",
+    "secteur": "Technologies et services de l’information",
+    "filiere": "IL, FDD, ICSI",
+    "promo": 2015,
+    "effectif": 4
+  },
+  {
+    "entreprise": "Keyrus",
+    "localisation": "France, Paris",
+    "nombre": "1001-5000",
+    "secteur": "Technologies et services de l’information",
+    "filiere": "FDD",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Kik Interactive, Inc.",
+    "localisation": "Canada, Ontario",
+    "nombre": "51-200",
+    "secteur": "Technologies sans fil",
+    "filiere": "ICSI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Lagencemedia",
+    "localisation": "France, Paris",
+    "nombre": "11-50",
+    "secteur": "Marketing et publicité",
+    "filiere": "SRI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Leanovia Consulting",
+    "localisation": "France, Paris",
+    "nombre": "11-50",
+    "secteur": "Technologies et services de l’information",
+    "filiere": "IL, ISII",
+    "promo": 2015,
+    "effectif": 4
+  },
+  {
+    "entreprise": "Lexsi",
+    "localisation": "France, Paris",
+    "nombre": "51-200",
+    "secteur": "Sécurité informatique et des réseaux",
+    "filiere": "SRI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Linkfluence",
+    "localisation": "France, Paris",
+    "nombre": "51-200",
+    "secteur": "Internet",
+    "filiere": "ICSI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Metadot Corporation",
+    "localisation": "USA, Texas",
+    "nombre": "11-50",
+    "secteur": "Matériel informatique",
+    "filiere": "ICSI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Micropole",
+    "localisation": "France, Lyon",
+    "nombre": "1001-5000",
+    "secteur": "Technologies et services de l’information",
+    "filiere": "ADEL",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Microsoft",
+    "localisation": "Chine",
+    "nombre": "plus de 10 000",
+    "secteur": "Logiciels informatiques",
+    "filiere": "SRI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Ministère de la Défense",
+    "localisation": "France, Paris",
+    "nombre": "plus de 10 000",
+    "secteur": "Défense et espace",
+    "filiere": "ICSI, FDD, SRI",
+    "promo": 2015,
+    "effectif": 4
+  },
+  {
+    "entreprise": "Mondeca",
+    "localisation": "France, Paris",
+    "nombre": "11-50",
+    "secteur": "Technologies et services de l’information",
+    "filiere": "ICSI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Murex",
+    "localisation": "France, Paris",
+    "nombre": "1001-5000",
+    "secteur": "Logiciels informatiques",
+    "filiere": "ICSI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Natixis",
+    "localisation": "France, Paris",
+    "nombre": "plus de 10 000",
+    "secteur": "Banques",
+    "filiere": "ICSI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "NeoXam",
+    "localisation": "France, Paris",
+    "nombre": "201-500",
+    "secteur": "Technologies et services de l’information",
+    "filiere": "ICSI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "NES",
+    "localisation": "France, Paris",
+    "nombre": "51-200",
+    "secteur": "Services financiers",
+    "filiere": "SRI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "NSIT Systems",
+    "localisation": "France, Paris",
+    "nombre": "11-50",
+    "secteur": "Technologies et services de l’information",
+    "filiere": "ICSI, FDD",
+    "promo": 2015,
+    "effectif": 2
+  },
+  {
+    "entreprise": "ONE2TEAM",
+    "localisation": "France, Paris",
+    "nombre": "51-200",
+    "secteur": "Logiciels informatiques",
+    "filiere": "ICSI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Orange",
+    "localisation": "France, Paris",
+    "nombre": "plus de 10 000",
+    "secteur": "Technologies et services de l’information",
+    "filiere": "ADEL, SRI",
+    "promo": 2015,
+    "effectif": 2
+  },
+  {
+    "entreprise": "PageYourself",
+    "localisation": "France, Paris",
+    "nombre": "1-10",
+    "secteur": "Internet",
+    "filiere": "SRI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Plastic Omnium",
+    "localisation": "France, Venette",
+    "nombre": "plus de 10 000",
+    "secteur": "Industrie automobile",
+    "filiere": "SRI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Praxedo",
+    "localisation": "France, Paris",
+    "nombre": "11-50",
+    "secteur": "Technologies et services de l’information",
+    "filiere": "SRI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Pulpix",
+    "localisation": "France, Paris",
+    "nombre": "1-10",
+    "secteur": "Internet",
+    "filiere": "ICSI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Renault",
+    "localisation": "France, Paris",
+    "nombre": "plus de 10 000",
+    "secteur": "Industrie automobile",
+    "filiere": "STRIE",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Reviatech SAS",
+    "localisation": "France, Paris",
+    "nombre": "1-10",
+    "secteur": "Technologies et services de l’information",
+    "filiere": "ICSI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Sagem",
+    "localisation": "France, Paris",
+    "nombre": "201-500",
+    "secteur": "Logiciels informatiques",
+    "filiere": "STRIE",
+    "promo": 2015,
+    "effectif": 2
+  },
+  {
+    "entreprise": "SAP",
+    "localisation": "France, Paris",
+    "nombre": "plus de 10 000",
+    "secteur": "Logiciels informatiques",
+    "filiere": "FDD",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "SAP",
+    "localisation": "Irlande",
+    "nombre": "plus de 10 000",
+    "secteur": "Logiciels informatiques",
+    "filiere": "SRI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "SBG Systems",
+    "localisation": "France, Paris",
+    "nombre": "11-50",
+    "secteur": "Industrie composants électriques/électroniques",
+    "filiere": "STRIE",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Siemens",
+    "localisation": "USA, Princeton",
+    "nombre": "plus de 10 000",
+    "secteur": "Industrie composants électriques/électroniques",
+    "filiere": "FDD",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Smile Open Source Solutions",
+    "localisation": "France, Paris",
+    "nombre": "1001-5000",
+    "secteur": "Internet",
+    "filiere": "ICSI, SRI",
+    "promo": 2015,
+    "effectif": 2
+  },
+  {
+    "entreprise": "Sofren Group",
+    "localisation": "France, Paris",
+    "nombre": "201-500",
+    "secteur": "Pétrole et énergie",
+    "filiere": "ICSI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Sopra Steria",
+    "localisation": "Espagne, Madrid",
+    "nombre": "plus de 10 000",
+    "secteur": "Technologies et services de l’information",
+    "filiere": "SRI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Sopra Steria",
+    "localisation": "France, Lille",
+    "nombre": "plus de 10 000",
+    "secteur": "Technologies et services de l’information",
+    "filiere": "FDD",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Sopra Steria",
+    "localisation": "France, Paris",
+    "nombre": "plus de 10 000",
+    "secteur": "Technologies et services de l’information",
+    "filiere": "ICSI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Sopra Steria",
+    "localisation": "France, Toulouse",
+    "nombre": "plus de 10 000",
+    "secteur": "Technologies et services de l’information",
+    "filiere": "FDD",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Soundsgood.co",
+    "localisation": "France, Paris",
+    "nombre": "1-10",
+    "secteur": "Musique",
+    "filiere": "ICSI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Splio",
+    "localisation": "Chine, Shanghai",
+    "nombre": "51-200",
+    "secteur": "Internet",
+    "filiere": "ICSI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "STEAMULO",
+    "localisation": "France, Paris",
+    "nombre": "11-50",
+    "secteur": "Internet",
+    "filiere": "ICSI",
+    "promo": 2015,
+    "effectif": 3
+  },
+  {
+    "entreprise": "Sword Group",
+    "localisation": "France, Paris",
+    "nombre": "1001-5000",
+    "secteur": "echnologies et services de l’information",
+    "filiere": "FDD",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Teradata",
+    "localisation": "France, Paris",
+    "nombre": "plus de 10 000",
+    "secteur": "Technologies et services de l’information",
+    "filiere": "FDD",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Thales Research and Technology",
+    "localisation": "France, Paris",
+    "nombre": "plus de 10 000",
+    "secteur": "Défense et espace",
+    "filiere": "FDD, SRI, ICSI",
+    "promo": 2015,
+    "effectif": 3
+  },
+  {
+    "entreprise": "The Green Guys Group",
+    "localisation": "Australie, Sydney",
+    "nombre": "51-200",
+    "secteur": "Environnement et énergies renouvelables",
+    "filiere": "MPI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Télécom Santé",
+    "localisation": "France, Rennes",
+    "nombre": "11-50",
+    "secteur": "Santé, forme et bien-être",
+    "filiere": "ICSI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Ubisoft",
+    "localisation": "France, Paris",
+    "nombre": "plus de 10 000",
+    "secteur": "Jeux électroniques",
+    "filiere": "ICSI, SRI",
+    "promo": 2015,
+    "effectif": 3
+  },
+  {
+    "entreprise": "Uptilab",
+    "localisation": "France, Paris",
+    "nombre": "11-50",
+    "secteur": "Internet",
+    "filiere": "SRI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Valeo",
+    "localisation": "France, Auvergne-Rhône-Alpes",
+    "nombre": "plus de 10 000",
+    "secteur": "Industrie automobile",
+    "filiere": "SRI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Vehicle Data Science",
+    "localisation": "USA, San Francisco",
+    "nombre": "1-10",
+    "secteur": "Services d’information",
+    "filiere": "FDD",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Vinci",
+    "localisation": "France, Paris",
+    "nombre": "plus de 10 000",
+    "secteur": "Construction",
+    "filiere": "ICSI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Viveris ASR",
+    "localisation": "France, Paris",
+    "nombre": "501-1000",
+    "secteur": "Logiciels informatiques",
+    "filiere": "SRI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Volkeno",
+    "localisation": "Senegal",
+    "nombre": "1-10",
+    "secteur": "Technologies et services de l’information",
+    "filiere": "ICSI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Weroom",
+    "localisation": "France, Paris",
+    "nombre": "11-50",
+    "secteur": "Internet",
+    "filiere": "ICSI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Wizcorp",
+    "localisation": "Japon, Tokyo",
+    "nombre": "11-50",
+    "secteur": "Technologies et services de l’information",
+    "filiere": "ICSI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Worldline",
+    "localisation": "France, Lyon",
+    "nombre": "5001-10 000",
+    "secteur": "Technologies et services de l’information",
+    "filiere": "ICSI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Worldline",
+    "localisation": "France, Lille",
+    "nombre": "5001-10 000",
+    "secteur": "Technologies et services de l’information",
+    "filiere": "SRI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "YUMEMI Inc.",
+    "localisation": "Japon, Tokyo",
+    "nombre": "51-200",
+    "secteur": "Technologies et services de l’information",
+    "filiere": "ICSI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Zalando SE",
+    "localisation": "Allemagne",
+    "nombre": "plus de 10 000",
+    "secteur": "Internet",
+    "filiere": "ICSI",
+    "promo": 2015,
+    "effectif": 1
+  },
+  {
+    "entreprise": "Zhejiang Electric Power Design Institute of China Energy Engineering Group",
+    "localisation": "Chine",
+    "nombre": "201-500",
+    "secteur": "Industrie composants électriques/électroniques",
+    "filiere": "ICSI",
+    "promo": 2015,
+    "effectif": 1
+  }
+]
