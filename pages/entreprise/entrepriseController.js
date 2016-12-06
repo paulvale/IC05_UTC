@@ -28,7 +28,8 @@ app.controller('EntrepriseController', function ($scope, $state, $http, $window,
         } else {
             if ($scope.promo != undefined && $scope.promo != "Toutes promos") {
                 $scope.recherche = $scope.data.filter(entreprise => {
-                    return entreprise.promo == $scope.promo;
+                    var promo = String(entreprise.promo)
+                    return promo.includes($scope.promo);                        
                 })
             }
 

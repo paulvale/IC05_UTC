@@ -36,22 +36,38 @@ app.controller('AnnuaireController', function ($scope, $state, $http, $window, E
             if ($scope.inputText != undefined && $scope.inputText.length > 0) {
                 var tmpArray = $scope.recherche;
                 $scope.recherche = tmpArray.filter(etudiant => {
+                    var etu = etudiant.etudiant.toLowerCase()
+                    var entreprise = etudiant.entreprise.toLowerCase()
+                    var localisation = etudiant.localisation.toLowerCase()
+
+                    var recherche = $scope.inputText.toLowerCase()
+
+                    return ((recherche == etu)
+                        || (recherche == entreprise)
+                        || (recherche == localisation)
+                        || etu.includes(recherche)
+                        || entreprise.includes(recherche)
+                        || localisation.includes(recherche)
+                    )
+                })
+
+                angular.forEach($scope.recherche, etudiant => {
+                    console.log("===")
+                    console.log(etudiant.nom)
                     var nom = etudiant.nom.toLowerCase()
                     var prenom = etudiant.prenom.toLowerCase()
                     var entreprise = etudiant.entreprise.toLowerCase()
                     var localisation = etudiant.localisation.toLowerCase()
 
                     var recherche = $scope.inputText.toLowerCase()
-
-                    return (recherche.includes(nom)
-                        || recherche.includes(prenom)
-                        || recherche.includes(entreprise)
-                        || recherche.includes(localisation)
-                        || nom.includes(recherche)
-                        || prenom.includes(recherche)
-                        || entreprise.includes(recherche)
-                        || localisation.includes(recherche)
-                    )
+                    console.log(recherche == nom)
+                    console.log(recherche ==prenom)
+                    console.log(recherche == entreprise) 
+                    console.log(recherche.includes(localisation))
+                    console.log(nom.includes(recherche))
+                    console.log(prenom.includes(recherche))
+                    console.log(entreprise.includes(recherche))
+                    console.log(localisation.includes(recherche))
                 })
 
             }
