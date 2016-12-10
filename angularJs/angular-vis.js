@@ -18,11 +18,10 @@ angular.module('ngVis', [])
             scope: {
                 data: '=',
                 options: '=',
-                events: '=',
-                stopSimulation: '&'
+                events: '='
             },
             link: function (scope, element, attr) {
-                
+
                 var networkEvents = [
                     'click',
                     'doubleclick',
@@ -49,7 +48,7 @@ angular.module('ngVis', [])
                     'initRedraw',
                     'beforeDrawing',
                     'afterDrawing',
-                    'animationFinished', 
+                    'animationFinished',
                     'stopSimulation'
 
                 ];
@@ -102,7 +101,7 @@ angular.module('ngVis', [])
                         scope.events.onload(graph);
                     }
 
-                
+
                 });
 
                 scope.$watchCollection('options', function (options) {
@@ -112,15 +111,19 @@ angular.module('ngVis', [])
                     network.setOptions(options);
                 });
 
-                scope.$watch('stopSimulation', function(stopSimulation){
-                    console.log("je suis la biatch")
-                    console.log(stopSimulation)
-                    if(network == null) {
+                scope.events.stopSimulation = function() {
+                    if (network == null) {
                         return;
                     }
                     network.stopSimulation();
-                })
+                }
 
+                scope.events.startSimulation = function() {
+                    if (network == null) {
+                        return;
+                    }
+                    network.startSimulation();
+                }
             }
         };
     });

@@ -5,25 +5,7 @@ app.controller('VisualisationController', function ($scope, $state, VisDataSet, 
       $scope.data = res.data;
     });
 
-  $scope.onSelect = function (items) {
-    // debugger;
-    alert('select');
-  };
-
-  $scope.onClick = function (props) {
-    //debugger;
-    alert('Click');
-  };
-
-  $scope.onDoubleClick = function (props) {
-    // debugger;
-    alert('DoubleClick');
-  };
-
-  $scope.rightClick = function (props) {
-    alert('Right click!');
-    props.event.preventDefault();
-  };
+ 
 
   $scope.events = {};
   $scope.visAvailable = false;
@@ -74,8 +56,4 @@ app.controller('VisualisationController', function ($scope, $state, VisDataSet, 
           $scope.visProgress = 100;
         })
     };
-
-    $scope.stopSimulation = function() {
-     console.log("coucou");
-    }
 });
