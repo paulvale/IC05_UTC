@@ -49,6 +49,12 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 			templateUrl: 'pages/resultat/filiere-taille.html'
 		})
 
+		.state('approfondissement', {
+			url: '/resultat/approfondissement',
+			templateUrl: 'pages/resultat/approfondissement.html'
+		})
+
+
 		// Annuaire
 		.state('annuaire', {
 			url: '/annuaire',
