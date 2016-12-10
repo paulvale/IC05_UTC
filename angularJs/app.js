@@ -22,6 +22,36 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 			controller: 'ResultatController'
 		})
 
+		.state('etudiant-filiere', {
+			url: '/resultat/etudiant-filiere',
+			templateUrl: 'pages/resultat/etudiant-filiere.html',
+			controller: 'ResultatController'
+		})
+
+		.state('filiere-entreprise', {
+			url: '/resultat/filiere-entreprise',
+			templateUrl: 'pages/resultat/filiere-entreprise.html',
+			controller: 'ResultatController'
+		})
+
+		.state('filiere-localisation', {
+			url: '/resultat/filiere-localisation',
+			templateUrl: 'pages/resultat/filiere-localisation',
+			controller: 'ResultatController'
+		})
+
+		.state('filiere-secteur', {
+			url: '/resultat/etudiant-secteur',
+			templateUrl: 'pages/resultat/etudiant-secteur.html',
+			controller: 'ResultatController'
+		})
+
+		.state('filiere-taille', {
+			url: '/resultat/filiere-taille',
+			templateUrl: 'pages/resultat/filiere-taille',
+			controller: 'ResultatController'
+		})
+
 		.state('annuaire', {
 			url: '/annuaire',
 			templateUrl: 'pages/annuaire/annuaire.html',
