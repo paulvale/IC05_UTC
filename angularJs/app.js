@@ -4,54 +4,52 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 	$urlRouterProvider.otherwise("/presentation");
 
 	$stateProvider
+		// Presentation
 		.state('presentation', {
 			url: '/presentation',
 			templateUrl: 'pages/presentation/presentation.html',
 			controller: 'PresentationController'
 		})
-
+		// Methodologie
 		.state('methodologie', {
 			url: '/methodologie',
 			templateUrl: 'pages/methodologie/methodologie.html',
 			controller: 'MethodologieController'
 		})
 
-		.state('resultat', {
-			url: '/resultat',
+		// Resultat
+		.state('introduction', {
+			url: '/resultat/introduction',
 			templateUrl: 'pages/resultat/resultat.html',
 			controller: 'ResultatController'
 		})
 
 		.state('etudiant-filiere', {
 			url: '/resultat/etudiant-filiere',
-			templateUrl: 'pages/resultat/etudiant-filiere.html',
-			controller: 'ResultatController'
+			templateUrl: 'pages/resultat/etudiant-filiere.html'
 		})
 
 		.state('filiere-entreprise', {
 			url: '/resultat/filiere-entreprise',
-			templateUrl: 'pages/resultat/filiere-entreprise.html',
-			controller: 'ResultatController'
+			templateUrl: 'pages/resultat/filiere-entreprise.html'
 		})
 
 		.state('filiere-localisation', {
 			url: '/resultat/filiere-localisation',
-			templateUrl: 'pages/resultat/filiere-localisation',
-			controller: 'ResultatController'
+			templateUrl: 'pages/resultat/filiere-localisation.html'
 		})
 
 		.state('filiere-secteur', {
 			url: '/resultat/etudiant-secteur',
-			templateUrl: 'pages/resultat/etudiant-secteur.html',
-			controller: 'ResultatController'
+			templateUrl: 'pages/resultat/filiere-secteur.html'
 		})
 
 		.state('filiere-taille', {
 			url: '/resultat/filiere-taille',
-			templateUrl: 'pages/resultat/filiere-taille',
-			controller: 'ResultatController'
+			templateUrl: 'pages/resultat/filiere-taille.html'
 		})
 
+		// Annuaire
 		.state('annuaire', {
 			url: '/annuaire',
 			templateUrl: 'pages/annuaire/annuaire.html',
@@ -65,6 +63,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 
 		})
 
+		// Visualisation
 		.state('visualisation', {
 			url: '/visualisation',
 			templateUrl: 'pages/visualisation/visualisation.html',
