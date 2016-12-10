@@ -16,7 +16,7 @@
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<!-- Vis.js -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.17.0/vis.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.17.0/vis.js"></script>
@@ -65,9 +65,19 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li ui-sref-active="active"><a ui-sref="presentation" ui-sref-active="active">Presentation</a></li>
-					<li ui-sref-active="active"><a ui-sref="methodologie" ui-sref-active="active">Methodologie</a></li>
-					<li ui-sref-active="active"><a ui-sref="resultat" ui-sref-active="active">Resultat</a></li>
+					<li ui-sref-active="active"><a ui-sref="presentation" ui-sref-active="active">Présentation</a></li>
+					<li ui-sref-active="active"><a ui-sref="methodologie" ui-sref-active="active">Méthodologie</a></li>
+					<li class="dropdown" ui-sref-active="active">
+						<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Résultats<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a ui-sref="resultat" ui-sref-active="active">Introduction</a></li>
+							<li><a ui-sref="etudiant-filiere" ui-sref-active="active">Etudiant - Filière</a></li>
+							<li><a ui-sref="filiere-localisation" ui-sref-active="active">Filière - Localisation</a></li>
+							<li><a ui-sref="filiere-taille" ui-sref-active="active">Filière - Taille</a></li>
+							<li><a ui-sref="filiere-secteur" ui-sref-active="active">Filière - Secteur</a></li>
+							<li><a ui-sref="filiere-entreprise" ui-sref-active="active">Filière - Entreprise</a></li>
+						</ul>
+					</li>
 					<li class="dropdown" ui-sref-active="active">
 						<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Annuaire<span class="caret"></span></a>
 						<ul class="dropdown-menu">
