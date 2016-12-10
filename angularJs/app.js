@@ -40,7 +40,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 		})
 
 		.state('filiere-secteur', {
-			url: '/resultat/etudiant-secteur',
+			url: '/resultat/filiere-secteur',
 			templateUrl: 'pages/resultat/filiere-secteur.html'
 		})
 
@@ -48,6 +48,12 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 			url: '/resultat/filiere-taille',
 			templateUrl: 'pages/resultat/filiere-taille.html'
 		})
+
+		.state('approfondissement', {
+			url: '/resultat/approfondissement',
+			templateUrl: 'pages/resultat/approfondissement.html'
+		})
+
 
 		// Annuaire
 		.state('annuaire', {
