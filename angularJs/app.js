@@ -40,7 +40,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 		})
 
 		.state('filiere-secteur', {
-			url: '/resultat/etudiant-secteur',
+			url: '/resultat/filiere-secteur',
 			templateUrl: 'pages/resultat/filiere-secteur.html'
 		})
 
