@@ -31,6 +31,7 @@ app.controller('VisualisationController', function ($scope, $state, VisDataSet, 
 
   $scope.options = {
       autoResize: true,
+      clickToUse: true,
       height: '700',
       width: '100%',
       interaction: {
@@ -44,13 +45,14 @@ app.controller('VisualisationController', function ($scope, $state, VisDataSet, 
               springLength: 230,
               springConstant: 0.18
           },
-          maxVelocity: 146,
+          maxVelocity: 50,
           solver: 'forceAtlas2Based',
           timestep: 0.35,
           stabilization: {
               enabled: true,
               iterations: 200,
-              updateInterval: 50
+              updateInterval: 50,
+              fit:true
           }
       },
       layout: {
@@ -72,4 +74,8 @@ app.controller('VisualisationController', function ($scope, $state, VisDataSet, 
           $scope.visProgress = 100;
         })
     };
+
+    $scope.stopSimulation = function() {
+     console.log("coucou");
+    }
 });
