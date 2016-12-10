@@ -40,6 +40,12 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 			templateUrl: 'pages/visualisation/visualisation.html',
 			controller: 'VisualisationController'
 		})
+
+		.state('conclusion', {
+			url: '/conclusion',
+			templateUrl: 'pages/conclusion/conclusion.html',
+			controller: 'ConclusionController'
+		})
 });
 
 app.factory('EtudiantsFactory', function(){
