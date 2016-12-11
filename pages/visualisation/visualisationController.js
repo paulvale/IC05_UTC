@@ -5,9 +5,12 @@ app.controller('VisualisationController', function ($scope, $state, VisDataSet, 
       $scope.data = res.data;
     });
 
+ 
+
   $scope.events = {};
   $scope.visAvailable = false;
   $scope.visProgress = 0;
+  $scope.selectedNode = {};
 
   $scope.options = {
       autoResize: true,
@@ -45,6 +48,21 @@ app.controller('VisualisationController', function ($scope, $state, VisDataSet, 
           randomSeed: 34
       }
     };
+
+    $scope.events.getInformation = function(obj){
+        $scope.$apply(function(){
+            var nodesArray = $scope.data.nodes;
+        
+            for(var i = 0; i < nodesArray.length; i++) {
+                if(nodesArray[i].id == obj.nodes[0]) {
+                    $scope.selectedNode = nodesArray[i];
+                    break;
+                }
+            }
+            console.log($scope.selectedNode);
+        })
+        
+    }
 
     $scope.events.stabilizationProgress = function() {
         $scope.visAvailable = false;

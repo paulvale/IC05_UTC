@@ -2,6 +2,15 @@
     <div class="col-xs-2">
         <button ng-click="events.stopSimulation()">Stop animation</button>
         <button ng-click="events.startSimulation()">Start animation</button>
+
+        <div>
+            Informations sur l'objet selectionné
+            <div>Label :{{selectedNode.label}}</div>
+            <div>ModularityClass : {{selectedNode.attributes["Modularity Class"]}}</div>
+            <div>Size : {{selectedNode.size}}</div>
+            <div>x : {{selectedNode.x}}</div>
+            <div>y : {{selectedNode.y}}</div>
+        </div>
     </div>
 
     <div class="col-xs-10">

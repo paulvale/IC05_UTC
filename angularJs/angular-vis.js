@@ -125,7 +125,6 @@ angular.module('ngVis', [])
                     // Create the graph2d object
                     network = new vis.Network(element[0], data, scope.options);
 
-
                     // Attach an event handler if defined
                     angular.forEach(scope.events, function (callback, event) {
                         if (networkEvents.indexOf(String(event)) >= 0) {
@@ -135,6 +134,10 @@ angular.module('ngVis', [])
 
                     network.on('selectNode', function (params) {
                         if (params.nodes.length == 1) {
+                            // On envoie à la fin les infos  sur le noeud
+                            var sauvegarde = params;
+                            
+
                             // On recupere d'abord tous les noeuds
                             var selectedEdges = parsed.edges.filter(edge => {
                                 if (edge.from == params.nodes[0] || edge.to == params.nodes[0])
@@ -169,6 +172,7 @@ angular.module('ngVis', [])
                             }
                             network.unselectAll();
                             network.setSelection(object);
+                            scope.events.getInformation(sauvegarde);
                         } else {
                             console.log("dans le else");
                         }
