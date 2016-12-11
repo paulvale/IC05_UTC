@@ -52,7 +52,6 @@ angular.module('ngVis', [])
                     'stopSimulation'
 
                 ];
-                console.log(scope)
                 var network = null;
 
                 scope.$watch('data', function () {
@@ -79,6 +78,30 @@ angular.module('ngVis', [])
                     // containing nodes and edges in vis format.
                     var parsed = vis.network.convertGephi(scope.data, parserOptions);
 
+                    angular.forEach(parsed.nodes, parse => {
+                        console.log(parse.color);
+                        parse.title = "<div class='panel' style='margin-bottom:0px; background-color:"+parse.color.background+";>"+
+                                        "<div class='panel-heading'>" +
+                                            "<h3 class='panel-title'>"+parse.label+"</h3>" +
+                                        "</div>" +
+                                     "</div>";
+                        parse.label =  undefined;
+                        parse.value = parse.size;
+                        parse.shape = 'dot';
+                        parse.scaling = {
+                            min: 20,
+                            max: 500,
+                            customScalingFunction: function (min, max, total, value) {
+                                if (max === min) {
+                                    return 0.5;
+                                }
+                                else {
+                                    var scale = 1 / (max - min);
+                                    return Math.max(0, (value - min) * scale);
+                                }
+                            }
+                        };
+                    })
                     // provide data in the normal fashion
                     var data = {
                         nodes: parsed.nodes,
@@ -88,12 +111,17 @@ angular.module('ngVis', [])
                     // Create the graph2d object
                     network = new vis.Network(element[0], data, scope.options);
 
+
                     // Attach an event handler if defined
                     angular.forEach(scope.events, function (callback, event) {
                         if (networkEvents.indexOf(String(event)) >= 0) {
                             network.on(event, callback);
                         }
                     });
+
+                    network.on('selectNode', function (params) {
+
+                    })
 
                     // onLoad callback
                     if (scope.events != null && scope.events.onload != null &&
@@ -111,14 +139,14 @@ angular.module('ngVis', [])
                     network.setOptions(options);
                 });
 
-                scope.events.stopSimulation = function() {
+                scope.events.stopSimulation = function () {
                     if (network == null) {
                         return;
                     }
                     network.stopSimulation();
                 }
 
-                scope.events.startSimulation = function() {
+                scope.events.startSimulation = function () {
                     if (network == null) {
                         return;
                     }

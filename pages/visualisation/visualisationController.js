@@ -17,8 +17,14 @@ app.controller('VisualisationController', function ($scope, $state, VisDataSet, 
       height: '700',
       width: '100%',
       interaction: {
+          hover:true,
           navigationButtons: true,
-          keyboard: true
+          keyboard : {
+            enabled:true,
+            speed:{
+                zoom : 0.05
+            }
+          }
       },
       physics: {
           forceAtlas2Based: {
@@ -41,6 +47,7 @@ app.controller('VisualisationController', function ($scope, $state, VisDataSet, 
           randomSeed: 34
       }
     };
+
 
     $scope.events.stabilizationProgress = function() {
         $scope.visAvailable = false;
