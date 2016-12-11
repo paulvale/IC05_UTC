@@ -6,9 +6,63 @@
 Ainsi nous avons voulu approfondir ces tendances en supprimant certaines données afin de mettre en évidence de nouvelles tendances émergentes dans les minorités.</p>
   <p> On réalise pour cela: </p>
   <ul>
-    <il> Un graphe filière-entreprise mais seulement pour les entreprises présentes à paris de plus de 10 000 employés : Déduire les tendances au sein de la majorité. </il>
-    <il> Un graphe filière-localisation pour toute localisation hors Paris : Déduire les localisations choisies par les utcéens en dehors de cette ville centrale. Nous considérons le pays (et non plus la ville) cette fois-ci afin d’avoir des tendances plus marquées.</li>
+    <li> Un graphe filière-entreprise pour les entreprises présentes à Paris de plus de 10 000 employés</li>
+    <li> Un graphe filière-localisation pour toute localisation hors Paris</li>
   </ul>
+
+  <hr />
+
+  <h2> Graphe filière-entreprise à Paris de plus de 10 000 employés </h2>
+
+  <h3> Intérêt du graphe </h3>
+    <p> Déduire les tendances au sein de la majorité. </p>
+
+  <h3> Algorithme utilisé </h3>
+  <ul>
+    <li> Layout Force Based </li>
+    <li> Force Atlas 2 </li>
+    <li> Degré de centralité </li>
+  </ul>
+
+  <img  class="img-responsive" src="./images/Paris10000ATLAS.png" alt="Filière - Entreprise à Paris de plus de 10 000 employés"/>
+
+  <br>
+
+  <h2> Observations </h2>
+  <ul>
+    <li> Ce graphe conforte les tendances principales et notamment la suprématie de deux entreprises : Thalès Research and Technologie et Capgemini. </li>
+    <li> Les UTCéens présents sur Paris dans les entreprises de plus de 10000 employés travaillent dans de grandes entreprises Française telles que la SNCF, Sanofi, L’Oréal, Airbus, Renault, Safran. </li>
+    <li> Nous pouvons en déduire que les UTCéens travaille au coeur de l’innovation dans des entreprises dont l’importance et l’influence ne sont pas négligeables. </li>
+  </ul>
+
+
+  <hr />
+
+  <h2> Graphe filière-localisation hors Paris et par Pays </h2>
+
+  <h3> Intérêt du graphe </h3>
+    <p> Déduire les localisations choisies par les utcéens en dehors de cette ville centrale. Nous considérons le pays (et non plus la ville) cette fois-ci afin d’avoir des tendances plus marquées. </p>
+
+  <h3> Algorithme utilisé </h3>
+  <ul>
+    <li> Layout Force Based </li>
+    <li> Yifan Hu </li>
+    <li> Degré de centralité </li>
+  </ul>
+
+  <img  class="img-responsive" src="./images/FilièrePaysYIF.png" alt="Filière - Localisation hors Paris par Pays "/>
+
+  <br>
+
+  <h2> Observations </h2>
+  <ul>
+    <li> En dehors de Paris qui reste la destination principale des UTCéens diplômés, on remarque que la France reste prépondérante. </li>
+    <li> Ce graphe nous permet cependant de déterminer les destinations internationales sélectionnées par les diplômés. </li>
+    <li> Notamment, on remarque l’importance des Etats-unis (destination la plus prisée en dehors de la France) suivi d’un peu plus loin de l’Angleterre et du Canada. </li>
+  </ul>
+
+  <hr />
+
 
 
 </div>
