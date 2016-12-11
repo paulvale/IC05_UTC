@@ -1,54 +1,61 @@
-<<<<<<< Updated upstream
-<h3>
-    Methodologie
-</h3>
-<uib-progressbar animate="false" value="15" type="success"><b>15%</b></uib-progressbar>
-=======
-<!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="utf-8">
-    <title>Méthodologie | IC05 — Tremplin v2.0</title> 
-  </head>
-
-  <body>
-    
-<div class="container">
-<h1>Méthodologie</h1>
+<h1>
+  Méthodologie</h1>
 <hr />
 
 <h2>Introduction</h2>
-<p>Nous allons présenter les différentes étapes de notre travail, à savoir d'une part la manière dont nous avons procédé pour récupérer et traiter nos données et d'autre part la facon dont nous les avons exploitées pour aboutir à des conclusions pertinentes.</p>
+<p>Nous allons présenter les différentes étapes de notre travail, à savoir d'une part la manière dont nous avons procédé pour
+  récupérer et traiter nos données et d'autre part la facon dont nous les avons exploitées pour aboutir à des conclusions
+  pertinentes.
+</p>
 
 <h2>Hypothèses réalisées</h2>
-En pensant à ce projet, nous avons bien sûr émis des hypothèses sur les tendances que nous étions suceptibles d'observer après traitement et représentation des données sous forme de graphes. Celles-ci sont les suivantes : 
+En pensant à ce projet, nous avons bien sûr émis des hypothèses sur les tendances que nous étions suceptibles d'observer
+après traitement et représentation des données sous forme de graphes. Celles-ci sont les suivantes :
 <ul>
-<li>Beaucoup d'étudiants vont travailler à Paris</li>
-<li>De plus en plus d'étudiants à l'étranger suivant les promotions</li>
-<li>Les étudiants vont plutôt dans des grosses entreprises</li>
-<li>La filière ne détermine pas le secteur d'activité, ni la taille de l'entreprise, ni la localisation. Elle influe seulement en terme de sujet à proprement dit du stage.</li>
-<li>Les entreprises prennent souvent plusieurs stagiaires UTCéens en même temps et ceci plusieurs années consécutives.</li>
+  <li>Beaucoup d'étudiants vont travailler à Paris</li>
+  <li>De plus en plus d'étudiants à l'étranger suivant les promotions</li>
+  <li>Les étudiants vont plutôt dans des grosses entreprises</li>
+  <li>La filière ne détermine pas le secteur d'activité, ni la taille de l'entreprise, ni la localisation. Elle influe seulement
+    en terme de sujet à proprement dit du stage.</li>
+  <li>Les entreprises prennent souvent plusieurs stagiaires UTCéens en même temps et ceci plusieurs années consécutives.</li>
 </ul>
-<p>Ces hypothèses ont motivées le choix des graphiques que nous avons choisi de représenter. Elles seront alors vérifiées ou inférées grâce à notre travail.
+<p>Ces hypothèses ont motivées le choix des graphiques que nous avons choisi de représenter. Elles seront alors vérifiées ou
+  inférées grâce à notre travail.</p>
 
 <h2>Données récupérées et traitées</h2>
-<p>Comme enoncé dans la partie Présentation, nous avons utilisé les données de Tremplin UTC et LinkedIn. En effet, Tremplin UTC nous a permis de récupérer facilement la liste de tous les étudiants de GI d'une promotion donnée ainsi que leur filière. Ce site ne contenant que très peu d'informations sur le devenir des étudiants, nous avons eu besoin d'aller chercher certaines information sur LinkedIn comme : </p>
+<p>Comme enoncé dans la partie Présentation, nous avons utilisé les données de Tremplin UTC et LinkedIn. En effet, Tremplin
+  UTC nous a permis de récupérer facilement la liste de tous les étudiants de GI d'une promotion donnée ainsi que leur filière.
+  Ce site ne contenant que très peu d'informations sur le devenir des étudiants, nous avons eu besoin d'aller chercher certaines
+  information sur LinkedIn comme : </p>
 <ul>
-<li>L'entreprise du stage de fin d'études de l'étudiant</li>
-<li>La localisation de l'entreprise</li>
-<li>Le nombre d'employés de l'entreprise</li>
-<li>Le secteur de l'entreprise</li>
+  <li>L'entreprise du stage de fin d'études de l'étudiant</li>
+  <li>La localisation de l'entreprise</li>
+  <li>Le nombre d'employés de l'entreprise</li>
+  <li>Le secteur de l'entreprise</li>
 </ul>
-<p>Nous avons choisi de considérer l'entreprise du stage de fin d'études et non l'entreprise actuelle afin de pouvoir effectuer des comparaisons sencées entre les promotions. En effet, en considérant l'entreprise actuelle, nous aurions abouti à des conclusions biaisées car certaines promotions auraient déja évoluées dans le monde du travail tandis que d'autres y feraient seulement leurs premiers pas.</p>
-<p>Ne possédant pas de compétences solides en matière de scrapping des données et ayant à l'esprit que LinkedIn ne laisse pas facilement accès à un gros volume de données, nous avons choisi de les récupérer à la main. Ce fût une tâche relativement longue mais qui nous a permis de récupérer facilement l'ensemble des informations exactes, ce qui constitue un avantage non négligable.</p>
-<p>Une fois les données récupérées et inscrite dans des fichiers Excel, nous avons dû réaliser une étape d'homogénisation. En effet, pour que tout se passe comme nous le souhaitons dans Gephi, les données doivent être correctement ortographiées et cohérentes dans leur ensemble. A titre d'exemple, pour considérer la localisation Sophia Antipolis et avoir un unique noeud dans Gephi, nous ne pouvions pas mettre "Sophia Antipolis" quelques fois et d'autres "Sophia-Antipolis".<p> 
+<p>Nous avons choisi de considérer l'entreprise du stage de fin d'études et non l'entreprise actuelle afin de pouvoir effectuer
+  des comparaisons sencées entre les promotions. En effet, en considérant l'entreprise actuelle, nous aurions abouti à des
+  conclusions biaisées car certaines promotions auraient déja évoluées dans le monde du travail tandis que d'autres y feraient
+  seulement leurs premiers pas.</p>
+<p>Ne possédant pas de compétences solides en matière de scrapping des données et ayant à l'esprit que LinkedIn ne laisse pas
+  facilement accès à un gros volume de données, nous avons choisi de les récupérer à la main. Ce fût une tâche relativement
+  longue mais qui nous a permis de récupérer facilement l'ensemble des informations exactes, ce qui constitue un avantage
+  non négligable.</p>
+<p>Une fois les données récupérées et inscrite dans des fichiers Excel, nous avons dû réaliser une étape d'homogénisation. En
+  effet, pour que tout se passe comme nous le souhaitons dans Gephi, les données doivent être correctement ortographiées
+  et cohérentes dans leur ensemble. A titre d'exemple, pour considérer la localisation Sophia Antipolis et avoir un unique
+  noeud dans Gephi, nous ne pouvions pas mettre "Sophia Antipolis" quelques fois et d'autres "Sophia-Antipolis".
+</p>
 
 
 <h2>Gephi</h2>
-<p>Gephi est le logiciel de cartographie que nous avons utilisé pour ce projet. Il requiert en entrée des fichiers à deux colonnes uniquement, l'une nommée "Source" et la seconde "Target" afin de pouvoir établir des liens entre les données.</p>
-<p>Nous avons donc premièrement bien réfléchi aux graphiques que l'on souhaitait représenter afin de valider ou inférer nos hypothèses et de découvrir, qui sait, d'autres tendances auxquelles nous n'avions pas pensé. Chaque promotion à fait l'objet d'une étude précise, puis l'ensemble des données ont été étudiées. Nous avons créé divers fichiers CSV, contenant des sous-ensembles de nos données, sous le format requis afin de pouvoir travailler la représentation et visualiser des tendances. Plusieurs fonctionnalités de Gephi ont été utilisées comme l'algorithme incontournable de spatialisation Force Atlas 2 ou encore le déchevauchement, l'ajustement des labels, la suppression de noeuds précis, des critères de hiérarchisation, etc. Les visualisations les plus pertinentes sont présentées dans l'onglet Visualisation de notre site internet.
-<p></p>
-    
-  </body>
-</html>
->>>>>>> Stashed changes
+<p>Gephi est le logiciel de cartographie que nous avons utilisé pour ce projet. Il requiert en entrée des fichiers à deux colonnes
+  uniquement, l'une nommée "Source" et la seconde "Target" afin de pouvoir établir des liens entre les données.</p>
+<p>Nous avons donc premièrement bien réfléchi aux graphiques que l'on souhaitait représenter afin de valider ou inférer nos
+  hypothèses et de découvrir, qui sait, d'autres tendances auxquelles nous n'avions pas pensé. Chaque promotion à fait l'objet
+  d'une étude précise, puis l'ensemble des données ont été étudiées. Nous avons créé divers fichiers CSV, contenant des sous-ensembles
+  de nos données, sous le format requis afin de pouvoir travailler la représentation et visualiser des tendances. Plusieurs
+  fonctionnalités de Gephi ont été utilisées comme l'algorithme incontournable de spatialisation Force Atlas 2 ou encore
+  le déchevauchement, l'ajustement des labels, la suppression de noeuds précis, des critères de hiérarchisation, etc. Les
+  visualisations les plus pertinentes sont présentées dans l'onglet Visualisation de notre site internet.
+</p>
