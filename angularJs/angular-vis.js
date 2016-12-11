@@ -21,6 +21,7 @@ angular.module('ngVis', [])
                 events: '='
             },
             link: function (scope, element, attr) {
+
                 var networkEvents = [
                     'click',
                     'doubleclick',
@@ -47,11 +48,22 @@ angular.module('ngVis', [])
                     'initRedraw',
                     'beforeDrawing',
                     'afterDrawing',
-                    'animationFinished'
+                    'animationFinished',
+                    'stopSimulation'
 
                 ];
-
                 var network = null;
+
+                Array.prototype.unique = function () {
+                    var n = {}, r = [];
+                    for (var i = 0; i < this.length; i++) {
+                        if (!n[this[i]]) {
+                            n[this[i]] = true;
+                            r.push(this[i]);
+                        }
+                    }
+                    return r;
+                };
 
                 scope.$watch('data', function () {
                     // Sanity check
@@ -76,6 +88,33 @@ angular.module('ngVis', [])
                     // parse the gephi file to receive an object
                     // containing nodes and edges in vis format.
                     var parsed = vis.network.convertGephi(scope.data, parserOptions);
+                    angular.forEach(parsed.nodes, parse => {
+                        parse.title = "<div class='panel' style='margin:0px !important; background-color:" + parse.color.background + ";>" +
+                            "<div class='panel-heading' style='margin:0px !important; background-color:" + parse.color.background + ";>" +
+                            "<h3 class='panel-title'>" + parse.label + "</h3>" +
+                            "</div>" +
+                            "</div>";
+                        parse.label = undefined;
+                        parse.value = parse.size;
+                        parse.shape = 'dot';
+                        parse.color.highlight = {
+                            background: "rgba(176,176,176,0.5)",
+                            border: "rgba(176,176,176,0.5)"
+                        };
+                        parse.scaling = {
+                            min: 20,
+                            max: 500,
+                            customScalingFunction: function (min, max, total, value) {
+                                if (max === min) {
+                                    return 0.5;
+                                }
+                                else {
+                                    var scale = 1 / (max - min);
+                                    return Math.max(0, (value - min) * scale);
+                                }
+                            }
+                        };
+                    })
 
                     // provide data in the normal fashion
                     var data = {
@@ -93,11 +132,63 @@ angular.module('ngVis', [])
                         }
                     });
 
+                    network.on('selectNode', function (params) {
+                        if (params.nodes.length == 1) {
+                            // On envoie à la fin les infos  sur le noeud
+                            var sauvegarde = params;
+                            
+
+                            // On recupere d'abord tous les noeuds
+                            var selectedEdges = parsed.edges.filter(edge => {
+                                if (edge.from == params.nodes[0] || edge.to == params.nodes[0])
+                                    return true;
+                                return false;
+                            })
+
+                            // On recupere tous les noeuds directement lié au noeud selectionné
+                            var nodesId = network.getConnectedNodes(params.nodes[0])
+                            nodesId.push(params.nodes[0])
+
+                            // On met en gris tous les autres noeuds: 
+                            nodesIdNotSelected = [];
+                            angular.forEach(parsed.nodes, node => {
+                                //console.log(node);
+                                if(!nodesId.includes(node.id))
+                                    nodesIdNotSelected.push(node.id);
+                            });
+
+                            // Pareil pour les edges :
+                            edgesIdNotSelected = [];
+                            angular.forEach(parsed.edges, edge => {
+                                if(!params.edges.includes(edge.id))
+                                    edgesIdNotSelected.push(edge.id);
+                            });
+
+                            edgesIdNotSelected = edgesIdNotSelected.unique();
+                            nodesIdNotSelected = nodesIdNotSelected.unique();
+                            var object = {
+                                nodes : nodesIdNotSelected,
+                                edges : edgesIdNotSelected
+                            }
+                            network.unselectAll();
+                            network.setSelection(object);
+                            scope.events.getInformation(sauvegarde);
+                        } else {
+                            console.log("dans le else");
+                        }
+                    })
+
+                    network.on('setSelection', function(params){
+                        console.log("coucou")
+                    })
+
                     // onLoad callback
                     if (scope.events != null && scope.events.onload != null &&
                         angular.isFunction(scope.events.onload)) {
                         scope.events.onload(graph);
                     }
+
+
                 });
 
                 scope.$watchCollection('options', function (options) {
@@ -106,6 +197,20 @@ angular.module('ngVis', [])
                     }
                     network.setOptions(options);
                 });
+
+                scope.events.stopSimulation = function () {
+                    if (network == null) {
+                        return;
+                    }
+                    network.stopSimulation();
+                }
+
+                scope.events.startSimulation = function () {
+                    if (network == null) {
+                        return;
+                    }
+                    network.startSimulation();
+                }
             }
         };
     });

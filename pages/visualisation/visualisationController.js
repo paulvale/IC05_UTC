@@ -5,37 +5,27 @@ app.controller('VisualisationController', function ($scope, $state, VisDataSet, 
       $scope.data = res.data;
     });
 
-  $scope.onSelect = function (items) {
-    // debugger;
-    alert('select');
-  };
-
-  $scope.onClick = function (props) {
-    //debugger;
-    alert('Click');
-  };
-
-  $scope.onDoubleClick = function (props) {
-    // debugger;
-    alert('DoubleClick');
-  };
-
-  $scope.rightClick = function (props) {
-    alert('Right click!');
-    props.event.preventDefault();
-  };
+ 
 
   $scope.events = {};
   $scope.visAvailable = false;
   $scope.visProgress = 0;
+  $scope.selectedNode = {};
 
   $scope.options = {
       autoResize: true,
+      clickToUse: true,
       height: '700',
       width: '100%',
       interaction: {
+          hover:true,
           navigationButtons: true,
-          keyboard: true
+          keyboard : {
+            enabled:true,
+            speed:{
+                zoom : 0.05
+            }
+          }
       },
       physics: {
           forceAtlas2Based: {
@@ -44,19 +34,35 @@ app.controller('VisualisationController', function ($scope, $state, VisDataSet, 
               springLength: 230,
               springConstant: 0.18
           },
-          maxVelocity: 146,
+          maxVelocity: 50,
           solver: 'forceAtlas2Based',
           timestep: 0.35,
           stabilization: {
               enabled: true,
               iterations: 200,
-              updateInterval: 50
+              updateInterval: 50,
+              fit:true
           }
       },
       layout: {
           randomSeed: 34
       }
     };
+
+    $scope.events.getInformation = function(obj){
+        $scope.$apply(function(){
+            var nodesArray = $scope.data.nodes;
+        
+            for(var i = 0; i < nodesArray.length; i++) {
+                if(nodesArray[i].id == obj.nodes[0]) {
+                    $scope.selectedNode = nodesArray[i];
+                    break;
+                }
+            }
+            console.log($scope.selectedNode);
+        })
+        
+    }
 
     $scope.events.stabilizationProgress = function() {
         $scope.visAvailable = false;
