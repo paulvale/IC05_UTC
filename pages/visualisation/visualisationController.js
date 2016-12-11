@@ -5,8 +5,6 @@ app.controller('VisualisationController', function ($scope, $state, VisDataSet, 
       $scope.data = res.data;
     });
 
- 
-
   $scope.events = {};
   $scope.visAvailable = false;
   $scope.visProgress = 0;
@@ -47,7 +45,6 @@ app.controller('VisualisationController', function ($scope, $state, VisDataSet, 
           randomSeed: 34
       }
     };
-
 
     $scope.events.stabilizationProgress = function() {
         $scope.visAvailable = false;
