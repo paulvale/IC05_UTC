@@ -48,6 +48,11 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 			url: '/resultat/filiere-taille',
 			templateUrl: 'pages/resultat/filiere-taille.html'
 		})
+		
+		.state('etudiant-entreprise', {
+			url: '/resultat/etudiant-entreprise',
+			templateUrl: 'pages/resultat/etudiant-entreprise.html'
+		})
 
 		.state('approfondissement', {
 			url: '/resultat/approfondissement',
