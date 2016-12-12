@@ -21,7 +21,7 @@ app.controller('AnnuaireController', function ($scope, $state, $http, $window, E
         if ($scope.filiere == undefined && $scope.inputText == undefined && $scope.promo == undefined ) {
             $scope.recherche = $scope.data;
         } else {
-            if ($scope.promo != undefined && $scope.promo != "Toutes promos") {
+            if ($scope.promo != undefined && $scope.promo != "Toutes promotions") {
                 $scope.recherche = $scope.data.filter(etudiant => {
                     return etudiant.promo == $scope.promo;
                 })
