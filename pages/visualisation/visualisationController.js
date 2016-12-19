@@ -1,6 +1,6 @@
 app.controller('VisualisationController', function ($scope, $state, VisDataSet, $http) {
   // load the JSON file containing the Gephi network.
-  $http.get('graphTest.json')
+  $http.get('graph.json')
     .then(function (res) {
       $scope.data = res.data;
     });
