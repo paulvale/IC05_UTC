@@ -179,7 +179,6 @@ angular.module('ngVis', [])
                     })
 
                     network.on('setSelection', function(params){
-                        console.log("coucou")
                     })
 
                     // onLoad callback

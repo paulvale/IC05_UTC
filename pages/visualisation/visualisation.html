@@ -1,19 +1,34 @@
 <div class="row" style="margin-left: 15px; margin-right: 15px">
     <div class="col-xs-3 navigationMenu">
-        <button ng-click="events.stopSimulation()">Stop animation</button>
-        <button ng-click="events.startSimulation()">Start animation</button>
+        <div style="margin-top: 20px; font-weight: bold; text-align: center"> Menu Dynamique :</div>
+        <hr>
+        <button ng-click="events.stopSimulation()" class="btn btn-primary btn-block">Stop animation</button>
+        <button ng-click="events.startSimulation()" class="btn btn-default btn-block">Start animation</button>
+        <hr>
 
         <div>
-            Informations sur l'objet selectionné
-            <div>Label :{{selectedNode.label}}</div>
-            <div>ModularityClass : {{selectedNode.attributes["Modularity Class"]}}</div>
-            <div>Size : {{selectedNode.size}}</div>
-            <div>x : {{selectedNode.x}}</div>
-            <div>y : {{selectedNode.y}}</div>
+            <div style="margin-top: 20px; font-weight: bold; text-align: center">Informations sur l'objet selectionné</div>
+            <hr>
+            
+            <div><b>Label : </b>{{selectedNode.label}}</div>
+            <div><b>ModularityClass : </b> {{selectedNode.attributes["Modularity Class"]}}</div>
+            <div><b>Size : </b> {{selectedNode.size | number: 2}}</div>
+            <div><b>x : </b> {{selectedNode.x | number: 2}}</div>
+            <div><b>y : </b>{{selectedNode.y | number: 2}}</div>
+            
+            <div style="margin-top: 20px; font-weight: bold; text-align: center">Liens avec :</div>
+            <hr>
+            <ul>
+                <li ng-repeat="voisin in selectedNodeArray" ng-show="$index <7">
+                    {{voisin}}
+                </li>
+            </ul>
+
         </div>
     </div>
 
     <div class="col-xs-9">
+        
         <div ng-show="!visAvailable" style="width:100%">
             <uib-progressbar class="progress-striped active" animate="false" value="visProgress" type="success">
                 <b>{{visProgress}}%</b>
